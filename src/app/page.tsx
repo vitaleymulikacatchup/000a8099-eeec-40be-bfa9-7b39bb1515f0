@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
@@ -101,6 +101,38 @@ export default function Home() {
         <BlogCardOne
           title="Our Coffee Stories"
           description="Insights and updates from our team."
+          blogs={[
+            {
+              id: "1",
+              category: "Coffee Culture",
+              title: "The Art of Coffee Brewing",
+              excerpt: "Discover the secrets behind the perfect cup of coffee.",
+              imageSrc: "https://images.pexels.com/photos/3352765/pexels-photo-3352765.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              authorName: "Coffee Master",
+              authorAvatar: "https://images.pexels.com/photos/3796810/pexels-photo-3796810.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              date: "15 Jan 2025"
+            },
+            {
+              id: "2",
+              category: "Community",
+              title: "Our Coffee Community",
+              excerpt: "Meet the people who make our coffee shop special.",
+              imageSrc: "https://images.pexels.com/photos/6166751/pexels-photo-6166751.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              authorName: "Community Manager",
+              authorAvatar: "https://images.pexels.com/photos/3801426/pexels-photo-3801426.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              date: "10 Jan 2025"
+            },
+            {
+              id: "3",
+              category: "Sustainability",
+              title: "Sustainable Coffee Practices",
+              excerpt: "Learn about our commitment to ethical sourcing.",
+              imageSrc: "https://images.pexels.com/photos/8936888/pexels-photo-8936888.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              authorName: "Sustainability Team",
+              authorAvatar: "https://images.pexels.com/photos/3796810/pexels-photo-3796810.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              date: "5 Jan 2025"
+            }
+          ]}
         />
       </div>
 
